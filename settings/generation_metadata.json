@@ -1,0 +1,1044 @@
+{
+  "base_101": {
+    "attribute_generation_seed": null,
+    "seed_availability": "当前归档未记录；不将求解种子误作属性生成种子",
+    "reproduction_input": "instances/base 中的固定 Excel 文件及 SHA-256"
+  },
+  "base_102": {
+    "master_seed": 20260929,
+    "prng": "Mulberry32",
+    "derived_seed": "FNV-1a uint32 of ASCII string \"20260929:{family_lowercase}:{customer_count}\"",
+    "category_assignment": "Fisher-Yates shuffle of demand categories, then Fisher-Yates shuffle of customer IDs for sensitivity selection",
+    "draw_order_per_customer": "demand, ready, due, and max_outside only if exposure-sensitive",
+    "rounding": "Math.round((value + Number.EPSILON) * 10) / 10",
+    "due_draw": "Uniform(rounded_ready + minimum_window_width, due_max), rounded to one decimal with minimum-width guard",
+    "instances": [
+      {
+        "family": "c102",
+        "distribution": "聚类分布",
+        "size": 10,
+        "seed": 3450008130,
+        "source_file": "c102.txt",
+        "output_file": "c102改10.xlsx",
+        "light_count": 5,
+        "medium_count": 3,
+        "heavy_count": 2,
+        "drone_eligible_count": 8,
+        "normal_count": 9,
+        "sensitive_count": 1,
+        "sensitive_customer_ids": "8",
+        "ready_range": "0-1.0",
+        "due_range": "0-6.0",
+        "min_window_width": 1,
+        "demand_min": 0.4,
+        "demand_max": 9.6
+      },
+      {
+        "family": "c102",
+        "distribution": "聚类分布",
+        "size": 100,
+        "seed": 696494454,
+        "source_file": "c102.txt",
+        "output_file": "c102改100.xlsx",
+        "light_count": 50,
+        "medium_count": 36,
+        "heavy_count": 14,
+        "drone_eligible_count": 86,
+        "normal_count": 90,
+        "sensitive_count": 10,
+        "sensitive_customer_ids": "3;5;6;20;29;68;83;89;95;97",
+        "ready_range": "0-3.0",
+        "due_range": "0-15.0",
+        "min_window_width": 2,
+        "demand_min": 0.1,
+        "demand_max": 9.1
+      },
+      {
+        "family": "c102",
+        "distribution": "聚类分布",
+        "size": 20,
+        "seed": 1201660089,
+        "source_file": "c102.txt",
+        "output_file": "c102改20.xlsx",
+        "light_count": 10,
+        "medium_count": 7,
+        "heavy_count": 3,
+        "drone_eligible_count": 17,
+        "normal_count": 18,
+        "sensitive_count": 2,
+        "sensitive_customer_ids": "1;20",
+        "ready_range": "0-1.0",
+        "due_range": "0-8.0",
+        "min_window_width": 1,
+        "demand_min": 0.2,
+        "demand_max": 8.7
+      },
+      {
+        "family": "c102",
+        "distribution": "聚类分布",
+        "size": 50,
+        "seed": 1168943494,
+        "source_file": "c102.txt",
+        "output_file": "c102改50.xlsx",
+        "light_count": 25,
+        "medium_count": 18,
+        "heavy_count": 7,
+        "drone_eligible_count": 43,
+        "normal_count": 45,
+        "sensitive_count": 5,
+        "sensitive_customer_ids": "9;11;16;22;46",
+        "ready_range": "0-2.0",
+        "due_range": "0-10.0",
+        "min_window_width": 2,
+        "demand_min": 0.1,
+        "demand_max": 8.9
+      },
+      {
+        "family": "r102",
+        "distribution": "随机分布",
+        "size": 10,
+        "seed": 3898625537,
+        "source_file": "r102.txt",
+        "output_file": "r102改10.xlsx",
+        "light_count": 5,
+        "medium_count": 3,
+        "heavy_count": 2,
+        "drone_eligible_count": 8,
+        "normal_count": 9,
+        "sensitive_count": 1,
+        "sensitive_customer_ids": "1",
+        "ready_range": "0-1.0",
+        "due_range": "0-6.0",
+        "min_window_width": 1,
+        "demand_min": 0.3,
+        "demand_max": 9.4
+      },
+      {
+        "family": "r102",
+        "distribution": "随机分布",
+        "size": 100,
+        "seed": 10164003,
+        "source_file": "r102.txt",
+        "output_file": "r102改100.xlsx",
+        "light_count": 50,
+        "medium_count": 36,
+        "heavy_count": 14,
+        "drone_eligible_count": 86,
+        "normal_count": 90,
+        "sensitive_count": 10,
+        "sensitive_customer_ids": "24;26;30;31;43;52;54;55;75;76",
+        "ready_range": "0-3.0",
+        "due_range": "0-15.0",
+        "min_window_width": 2,
+        "demand_min": 0.1,
+        "demand_max": 8.3
+      },
+      {
+        "family": "r102",
+        "distribution": "随机分布",
+        "size": 20,
+        "seed": 3999438346,
+        "source_file": "r102.txt",
+        "output_file": "r102改20.xlsx",
+        "light_count": 10,
+        "medium_count": 7,
+        "heavy_count": 3,
+        "drone_eligible_count": 17,
+        "normal_count": 18,
+        "sensitive_count": 2,
+        "sensitive_customer_ids": "4;12",
+        "ready_range": "0-1.0",
+        "due_range": "0-8.0",
+        "min_window_width": 1,
+        "demand_min": 0.1,
+        "demand_max": 9.7
+      },
+      {
+        "family": "r102",
+        "distribution": "随机分布",
+        "size": 50,
+        "seed": 1617560901,
+        "source_file": "r102.txt",
+        "output_file": "r102改50.xlsx",
+        "light_count": 25,
+        "medium_count": 18,
+        "heavy_count": 7,
+        "drone_eligible_count": 43,
+        "normal_count": 45,
+        "sensitive_count": 5,
+        "sensitive_customer_ids": "1;19;21;38;45",
+        "ready_range": "0-2.0",
+        "due_range": "0-10.0",
+        "min_window_width": 2,
+        "demand_min": 0.1,
+        "demand_max": 9.8
+      },
+      {
+        "family": "rc102",
+        "distribution": "聚类-随机混合分布",
+        "size": 10,
+        "seed": 3027746738,
+        "source_file": "rc102.txt",
+        "output_file": "rc102改10.xlsx",
+        "light_count": 5,
+        "medium_count": 3,
+        "heavy_count": 2,
+        "drone_eligible_count": 8,
+        "normal_count": 9,
+        "sensitive_count": 1,
+        "sensitive_customer_ids": "3",
+        "ready_range": "0-1.0",
+        "due_range": "0-6.0",
+        "min_window_width": 1,
+        "demand_min": 0.2,
+        "demand_max": 8.6
+      },
+      {
+        "family": "rc102",
+        "distribution": "聚类-随机混合分布",
+        "size": 100,
+        "seed": 2592242086,
+        "source_file": "rc102.txt",
+        "output_file": "rc102改100.xlsx",
+        "light_count": 50,
+        "medium_count": 36,
+        "heavy_count": 14,
+        "drone_eligible_count": 86,
+        "normal_count": 90,
+        "sensitive_count": 10,
+        "sensitive_customer_ids": "4;14;47;53;55;66;73;76;77;99",
+        "ready_range": "0-3.0",
+        "due_range": "0-15.0",
+        "min_window_width": 2,
+        "demand_min": 0.1,
+        "demand_max": 9.3
+      },
+      {
+        "family": "rc102",
+        "distribution": "聚类-随机混合分布",
+        "size": 20,
+        "seed": 2926933929,
+        "source_file": "rc102.txt",
+        "output_file": "rc102改20.xlsx",
+        "light_count": 10,
+        "medium_count": 7,
+        "heavy_count": 3,
+        "drone_eligible_count": 17,
+        "normal_count": 18,
+        "sensitive_count": 2,
+        "sensitive_customer_ids": "6;9",
+        "ready_range": "0-1.0",
+        "due_range": "0-8.0",
+        "min_window_width": 1,
+        "demand_min": 0.2,
+        "demand_max": 9.3
+      },
+      {
+        "family": "rc102",
+        "distribution": "聚类-随机混合分布",
+        "size": 50,
+        "seed": 2894217334,
+        "source_file": "rc102.txt",
+        "output_file": "rc102改50.xlsx",
+        "light_count": 25,
+        "medium_count": 18,
+        "heavy_count": 7,
+        "drone_eligible_count": 43,
+        "normal_count": 45,
+        "sensitive_count": 5,
+        "sensitive_customer_ids": "3;7;8;38;49",
+        "ready_range": "0-2.0",
+        "due_range": "0-10.0",
+        "min_window_width": 2,
+        "demand_min": 0.1,
+        "demand_max": 9.7
+      }
+    ]
+  },
+  "attribute_rules": {
+    "weight_groups": [
+      {
+        "count": "floor(0.50*n)",
+        "uniform_kg": [
+          0.1,
+          0.7
+        ]
+      },
+      {
+        "count": "floor(0.36*n)",
+        "uniform_kg": [
+          0.8,
+          2.5
+        ]
+      },
+      {
+        "count": "n-floor(0.50*n)-floor(0.36*n)",
+        "uniform_kg": [
+          2.6,
+          10
+        ]
+      }
+    ],
+    "can_drone": "1 iff demand <= 2.5 kg; fixed input eligibility",
+    "ordinary_count": "floor(0.90*n)",
+    "ordinary_max_outside_h": 100,
+    "base_sensitive_uniform_h": [
+      0.3,
+      1
+    ],
+    "decimal_places": 1,
+    "time_windows": {
+      "5": {
+        "ready_max_h": 0.5,
+        "due_max_h": 5,
+        "minimum_width_h": 1
+      },
+      "10": {
+        "ready_max_h": 1,
+        "due_max_h": 6,
+        "minimum_width_h": 1
+      },
+      "15": {
+        "ready_max_h": 1,
+        "due_max_h": 7,
+        "minimum_width_h": 1
+      },
+      "20": {
+        "ready_max_h": 1,
+        "due_max_h": 8,
+        "minimum_width_h": 1
+      },
+      "50": {
+        "ready_max_h": 2,
+        "due_max_h": 10,
+        "minimum_width_h": 2
+      },
+      "100": {
+        "ready_max_h": 3,
+        "due_max_h": 15,
+        "minimum_width_h": 2
+      }
+    },
+    "coordinates": "Original Solomon depot and first n customers; scale by 0.6 exactly once in the experiment"
+  },
+  "exposure_ratio": {
+    "customer_count": 50,
+    "levels": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "count_rule": "round(50*ratio)",
+    "uniform_h": [
+      0.1,
+      0.3
+    ],
+    "ordinary_max_outside_h": 100,
+    "decimal_places": 1,
+    "quantile_mapping": "tight_raw=0.1+0.2*uniform_unit; use recorded quantiles and nested order, no new draws",
+    "designs": [
+      {
+        "base_instance": "c101改50.xlsx",
+        "customer_selection_seed": 2026073101,
+        "nested_customer_order_used": [
+          47,
+          33,
+          37,
+          45,
+          41,
+          29,
+          16,
+          31,
+          2,
+          40,
+          30,
+          44,
+          17,
+          7,
+          3,
+          13,
+          36,
+          23,
+          6,
+          26,
+          43,
+          39,
+          20,
+          8,
+          25
+        ],
+        "customer_assignments_used": [
+          {
+            "nested_rank": 1,
+            "customer_id": 47,
+            "uniform_unit": 0.20570621406659484,
+            "uniform_raw": 0.14114124281331897,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 2,
+            "customer_id": 33,
+            "uniform_unit": 0.6640183173585682,
+            "uniform_raw": 0.23280366347171366,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 3,
+            "customer_id": 37,
+            "uniform_unit": 0.3746702242642641,
+            "uniform_raw": 0.17493404485285283,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 4,
+            "customer_id": 45,
+            "uniform_unit": 0.7096834303811191,
+            "uniform_raw": 0.24193668607622384,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 5,
+            "customer_id": 41,
+            "uniform_unit": 0.4619846090208739,
+            "uniform_raw": 0.19239692180417478,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 6,
+            "customer_id": 29,
+            "uniform_unit": 0.2088960448745638,
+            "uniform_raw": 0.14177920897491278,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 7,
+            "customer_id": 16,
+            "uniform_unit": 0.5240062545053661,
+            "uniform_raw": 0.20480125090107323,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 8,
+            "customer_id": 31,
+            "uniform_unit": 0.8515235420782118,
+            "uniform_raw": 0.27030470841564236,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 9,
+            "customer_id": 2,
+            "uniform_unit": 0.504480859497562,
+            "uniform_raw": 0.20089617189951242,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 10,
+            "customer_id": 40,
+            "uniform_unit": 0.6626296415925025,
+            "uniform_raw": 0.2325259283185005,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 11,
+            "customer_id": 30,
+            "uniform_unit": 0.4204333429224789,
+            "uniform_raw": 0.1840866685844958,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 12,
+            "customer_id": 44,
+            "uniform_unit": 0.17517710104584694,
+            "uniform_raw": 0.1350354202091694,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 13,
+            "customer_id": 17,
+            "uniform_unit": 0.15762215736322105,
+            "uniform_raw": 0.13152443147264423,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 14,
+            "customer_id": 7,
+            "uniform_unit": 0.41726292739622295,
+            "uniform_raw": 0.1834525854792446,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 15,
+            "customer_id": 3,
+            "uniform_unit": 0.924933741101995,
+            "uniform_raw": 0.28498674822039904,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 16,
+            "customer_id": 13,
+            "uniform_unit": 0.6220277724787592,
+            "uniform_raw": 0.22440555449575184,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 17,
+            "customer_id": 36,
+            "uniform_unit": 0.38762404629960656,
+            "uniform_raw": 0.1775248092599213,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 18,
+            "customer_id": 23,
+            "uniform_unit": 0.06177877797745168,
+            "uniform_raw": 0.11235575559549034,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 19,
+            "customer_id": 6,
+            "uniform_unit": 0.4004605123773217,
+            "uniform_raw": 0.18009210247546437,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 20,
+            "customer_id": 26,
+            "uniform_unit": 0.007615063805133104,
+            "uniform_raw": 0.10152301276102663,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 21,
+            "customer_id": 43,
+            "uniform_unit": 0.8206678219139575,
+            "uniform_raw": 0.2641335643827915,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 22,
+            "customer_id": 39,
+            "uniform_unit": 0.7804436704609542,
+            "uniform_raw": 0.25608873409219085,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 23,
+            "customer_id": 20,
+            "uniform_unit": 0.9312066440470516,
+            "uniform_raw": 0.28624132880941033,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 24,
+            "customer_id": 8,
+            "uniform_unit": 0.43416614294983447,
+            "uniform_raw": 0.1868332285899669,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 25,
+            "customer_id": 25,
+            "uniform_unit": 0.5318704897072166,
+            "uniform_raw": 0.20637409794144335,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.5
+          }
+        ]
+      },
+      {
+        "base_instance": "r101改50.xlsx",
+        "customer_selection_seed": 2026073102,
+        "nested_customer_order_used": [
+          17,
+          38,
+          12,
+          47,
+          28,
+          11,
+          37,
+          27,
+          31,
+          34,
+          20,
+          43,
+          41,
+          24,
+          39,
+          10,
+          4,
+          46,
+          22,
+          6,
+          5,
+          50,
+          8,
+          29,
+          44
+        ],
+        "customer_assignments_used": [
+          {
+            "nested_rank": 1,
+            "customer_id": 17,
+            "uniform_unit": 0.7048630258068441,
+            "uniform_raw": 0.24097260516136884,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 2,
+            "customer_id": 38,
+            "uniform_unit": 0.4305907213129103,
+            "uniform_raw": 0.18611814426258208,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 3,
+            "customer_id": 12,
+            "uniform_unit": 0.28112890338525176,
+            "uniform_raw": 0.15622578067705037,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 4,
+            "customer_id": 47,
+            "uniform_unit": 0.7281866020057349,
+            "uniform_raw": 0.245637320401147,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 5,
+            "customer_id": 28,
+            "uniform_unit": 0.3596573390532285,
+            "uniform_raw": 0.17193146781064572,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 6,
+            "customer_id": 11,
+            "uniform_unit": 0.7808660797309129,
+            "uniform_raw": 0.2561732159461826,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 7,
+            "customer_id": 37,
+            "uniform_unit": 0.6375903878360986,
+            "uniform_raw": 0.22751807756721973,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 8,
+            "customer_id": 27,
+            "uniform_unit": 0.9992739867884665,
+            "uniform_raw": 0.29985479735769327,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 9,
+            "customer_id": 31,
+            "uniform_unit": 0.3352613013703376,
+            "uniform_raw": 0.16705226027406753,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 10,
+            "customer_id": 34,
+            "uniform_unit": 0.6594515733886509,
+            "uniform_raw": 0.2318903146777302,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 11,
+            "customer_id": 20,
+            "uniform_unit": 0.6018022878561168,
+            "uniform_raw": 0.22036045757122336,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 12,
+            "customer_id": 43,
+            "uniform_unit": 0.533186397049576,
+            "uniform_raw": 0.20663727940991522,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 13,
+            "customer_id": 41,
+            "uniform_unit": 0.19511029683053493,
+            "uniform_raw": 0.139022059366107,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 14,
+            "customer_id": 24,
+            "uniform_unit": 0.4570520925335586,
+            "uniform_raw": 0.19141041850671173,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 15,
+            "customer_id": 39,
+            "uniform_unit": 0.057204082142561674,
+            "uniform_raw": 0.11144081642851233,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 16,
+            "customer_id": 10,
+            "uniform_unit": 0.16924963635392487,
+            "uniform_raw": 0.13384992727078499,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 17,
+            "customer_id": 4,
+            "uniform_unit": 0.38458737754262984,
+            "uniform_raw": 0.176917475508526,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 18,
+            "customer_id": 46,
+            "uniform_unit": 0.6218863492831587,
+            "uniform_raw": 0.22437726985663176,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 19,
+            "customer_id": 22,
+            "uniform_unit": 0.9441674258559941,
+            "uniform_raw": 0.28883348517119883,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 20,
+            "customer_id": 6,
+            "uniform_unit": 0.1557140708900988,
+            "uniform_raw": 0.13114281417801976,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 21,
+            "customer_id": 5,
+            "uniform_unit": 0.9585566658060997,
+            "uniform_raw": 0.29171133316121994,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 22,
+            "customer_id": 50,
+            "uniform_unit": 0.40153875201940536,
+            "uniform_raw": 0.18030775040388108,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 23,
+            "customer_id": 8,
+            "uniform_unit": 0.6071979571133851,
+            "uniform_raw": 0.22143959142267702,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 24,
+            "customer_id": 29,
+            "uniform_unit": 0.5833464881870896,
+            "uniform_raw": 0.21666929763741793,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 25,
+            "customer_id": 44,
+            "uniform_unit": 0.35259402729570866,
+            "uniform_raw": 0.17051880545914172,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.5
+          }
+        ]
+      },
+      {
+        "base_instance": "rc101改50.xlsx",
+        "customer_selection_seed": 2026073103,
+        "nested_customer_order_used": [
+          42,
+          8,
+          43,
+          33,
+          34,
+          40,
+          45,
+          1,
+          32,
+          7,
+          46,
+          36,
+          50,
+          6,
+          12,
+          18,
+          41,
+          39,
+          16,
+          3,
+          49,
+          9,
+          13,
+          15,
+          4
+        ],
+        "customer_assignments_used": [
+          {
+            "nested_rank": 1,
+            "customer_id": 42,
+            "uniform_unit": 0.36845125700347126,
+            "uniform_raw": 0.17369025140069427,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 2,
+            "customer_id": 8,
+            "uniform_unit": 0.5397792691364884,
+            "uniform_raw": 0.2079558538272977,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 3,
+            "customer_id": 43,
+            "uniform_unit": 0.9985213493928312,
+            "uniform_raw": 0.29970426987856624,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 4,
+            "customer_id": 33,
+            "uniform_unit": 0.763083885423839,
+            "uniform_raw": 0.2526167770847678,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 5,
+            "customer_id": 34,
+            "uniform_unit": 0.6467230299022048,
+            "uniform_raw": 0.22934460598044096,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.1
+          },
+          {
+            "nested_rank": 6,
+            "customer_id": 40,
+            "uniform_unit": 0.678998019080609,
+            "uniform_raw": 0.2357996038161218,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 7,
+            "customer_id": 45,
+            "uniform_unit": 0.5146676455624402,
+            "uniform_raw": 0.20293352911248805,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 8,
+            "customer_id": 1,
+            "uniform_unit": 0.22390695475041866,
+            "uniform_raw": 0.14478139095008374,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 9,
+            "customer_id": 32,
+            "uniform_unit": 0.19077322562225163,
+            "uniform_raw": 0.13815464512445033,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 10,
+            "customer_id": 7,
+            "uniform_unit": 0.015217958949506283,
+            "uniform_raw": 0.10304359178990126,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.2
+          },
+          {
+            "nested_rank": 11,
+            "customer_id": 46,
+            "uniform_unit": 0.9980239355936645,
+            "uniform_raw": 0.29960478711873295,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 12,
+            "customer_id": 36,
+            "uniform_unit": 0.8104912743438034,
+            "uniform_raw": 0.2620982548687607,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 13,
+            "customer_id": 50,
+            "uniform_unit": 0.40842768433503807,
+            "uniform_raw": 0.1816855368670076,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 14,
+            "customer_id": 6,
+            "uniform_unit": 0.8344752830453216,
+            "uniform_raw": 0.2668950566090643,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 15,
+            "customer_id": 12,
+            "uniform_unit": 0.19514530431479216,
+            "uniform_raw": 0.13902906086295844,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.3
+          },
+          {
+            "nested_rank": 16,
+            "customer_id": 18,
+            "uniform_unit": 0.4798594927415252,
+            "uniform_raw": 0.19597189854830505,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 17,
+            "customer_id": 41,
+            "uniform_unit": 0.7884088533464818,
+            "uniform_raw": 0.2576817706692964,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 18,
+            "customer_id": 39,
+            "uniform_unit": 0.5989092267118394,
+            "uniform_raw": 0.2197818453423679,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 19,
+            "customer_id": 16,
+            "uniform_unit": 0.03186529502272606,
+            "uniform_raw": 0.10637305900454522,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 20,
+            "customer_id": 3,
+            "uniform_unit": 0.8443425586447119,
+            "uniform_raw": 0.2688685117289424,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.4
+          },
+          {
+            "nested_rank": 21,
+            "customer_id": 49,
+            "uniform_unit": 0.9342256051022558,
+            "uniform_raw": 0.2868451210204512,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 22,
+            "customer_id": 9,
+            "uniform_unit": 0.13988053076900542,
+            "uniform_raw": 0.1279761061538011,
+            "max_outside": 0.1,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 23,
+            "customer_id": 13,
+            "uniform_unit": 0.9890975018497555,
+            "uniform_raw": 0.2978195003699511,
+            "max_outside": 0.3,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 24,
+            "customer_id": 15,
+            "uniform_unit": 0.4048118570353836,
+            "uniform_raw": 0.18096237140707672,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.5
+          },
+          {
+            "nested_rank": 25,
+            "customer_id": 4,
+            "uniform_unit": 0.694571261294186,
+            "uniform_raw": 0.23891425225883722,
+            "max_outside": 0.2,
+            "theoretical_first_active_ratio": 0.5
+          }
+        ]
+      }
+    ]
+  }
+}

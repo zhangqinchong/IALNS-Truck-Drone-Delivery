@@ -1,0 +1,4 @@
+* text=auto eol=lf
+src/ialns.py -text
+*.xlsx -text
+*.gz -text

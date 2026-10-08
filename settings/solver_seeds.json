@@ -1,0 +1,15 @@
+{
+  "solver_seeds_in_order": [
+    104729,
+    130363,
+    155921,
+    181081,
+    206369,
+    231779,
+    257053,
+    282427,
+    307831,
+    333287
+  ],
+  "usage": "Ten fixed independent solver seeds; not attribute-generation seeds"
+}
