@@ -5,9 +5,9 @@ Reproducibility materials for an improved adaptive large neighborhood search
 heterogeneous parcel weights, truck-only customers, multi-customer drone sorties,
 customer time windows, exposure-sensitive parcels, and carbon-emission costs.
 
-This repository contains the **final full IALNS only**. Comparison algorithms
-(basic ALNS, GA, and the Gurobi formulation), historical tuning variants, and
-unrelated project files are not included.
+This repository provides the final IALNS implementation, modified Solomon
+instances, instance-generation programs, parameter settings, fixed random seeds,
+and experimental results.
 
 [Chinese introduction](README.zh-CN.md) | [Experimental protocol](docs/experiments.md)
 | [Data and generation rules](docs/instances.md)
@@ -22,7 +22,7 @@ unrelated project files are not included.
 | `instances/coordinates/` | Original, unscaled coordinates for generation |
 | `settings/` | Full parameter values, ten solver seeds, input checksums, generation metadata |
 | `scripts/` | Portable single-run, batch, generation, and result-validation tools |
-| `results/` | IALNS-only archived costs, times, routes, schedules, and convergence histories |
+| `results/` | Archived IALNS costs, times, routes, schedules, and convergence histories |
 | `tests/` | Input, generator, configuration, and short solver regression tests |
 
 The file hashes and dataset counts are recorded in `settings/release_manifest.json`.
@@ -61,7 +61,7 @@ The frozen implementation uses an initial-solution portfolio, 21 composite
 operators, adaptive operator weighting, simulated-annealing acceptance, a tabu
 list, stagnation-adaptive reconstruction and intensification, and plateau/final
 polishing. The class name `ALNSOptimizer` inside the source is a historical name
-for this **full IALNS**, not the unpublished comparison baseline.
+for this full IALNS implementation.
 
 Truck travel distances are Euclidean distances multiplied by the road factor;
 drone distances are Euclidean. A drone may be launched after truck arrival while
