@@ -55,10 +55,8 @@ the tested Python version for the closest replication and report deviations.
 CSV files retain instance, distribution, series, seed, iterations, initial and
 best objective, wall/CPU time, fixed/travel/waiting/tardiness/carbon costs,
 truck/drone distances, emissions, used drones, sorties, lateness, and route data.
-The `small` CSV intentionally excludes exact-solver and older-version comparison
-fields. Compressed JSONL files store feasible final routes, time schedules,
-full configurations, objective histories, and best-update logs. Absolute local
-paths, solver process logs, machine usernames, and random-state dumps are omitted.
+Compressed JSONL files store feasible final routes, time schedules,
+full configurations, objective histories, and best-update logs.
 
 `scripts/validate_results.py` re-evaluates all 1,110 archived route records using
 the released evaluator and their configurations, checks exactly-once customer
@@ -69,6 +67,5 @@ Recorded best costs are heuristic incumbent values, not certified optima.
 The source is marked `-text` in `.gitattributes` so Git does not normalize its
 line endings; its frozen checksum stays valid after cloning on Windows or Linux.
 
-The final benchmarking inputs overlap with development experiments. This package
-does not assert a strictly held-out tuning/evaluation split or provide unpublished
-comparison-algorithm results.
+The final benchmarking inputs overlap with development experiments; the
+experiments do not constitute a strictly held-out tuning/evaluation split.
